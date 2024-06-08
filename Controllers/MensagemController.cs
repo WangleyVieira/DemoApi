@@ -10,7 +10,8 @@ namespace DemoApi.Controllers
         [HttpGet]
         public IActionResult GetMensagem()
         {
-            return Ok("Olá");
-        }
+			var mensagem = new { texto = "Comunicação com servidor ASP.NET Web API com sucesso!" };
+			return Ok(mensagem);
+		}
     }
 }
